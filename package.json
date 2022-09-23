@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Daliens01/api.git"
+    "url": "git+https://github.com/Daliens01/api-list.git"
   },
   "author": "Daliens01",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Daliens01/api/issues"
+    "url": "https://github.com/Daliens01/api-list/issues"
   },
-  "homepage": "https://github.com/Daliens01/api#readme",
+  "homepage": "https://github.com/Daliens01/api-list#readme",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.0.2",

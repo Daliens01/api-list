@@ -21,10 +21,6 @@ const EschemaAlumnos = new Schema ({
         type: String,
         trim: true,
         maxlength: [50]
-    },comentarios:{
-        type: String,
-        trim: true,
-        maxlength: [500]
     },userStatus:{
         type: String,
         trim: true

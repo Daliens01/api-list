@@ -18,6 +18,10 @@ const SchemaAsignacion = new Schema ({
         type: Number,
         trim: true,
         maxlength: [10]
+    },sede:{
+        type: String,
+        trim: true,
+        maxlength: [500]
     },fechaInicio :{
         type: Date,
         trim: true,
@@ -27,6 +31,10 @@ const SchemaAsignacion = new Schema ({
         trim: true,
         maxlength: [10]
     },idMateria:{
+        type: String,
+        trim: true,
+        maxlength: [500]
+    },comentarios:{
         type: String,
         trim: true,
         maxlength: [500]
