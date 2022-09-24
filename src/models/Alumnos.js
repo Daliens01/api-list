@@ -1,7 +1,11 @@
 const { Schema, model, models} = require("mongoose");
 
 const EschemaAlumnos = new Schema ({ 
-    nombreCompleto:{
+    matricula:{
+        type: Number,
+        trim: true,
+        maxlength: [200]
+    },nombreCompleto:{
         type: String,
         trim: true,
         maxlength: [200]

@@ -25,8 +25,8 @@ router.get(("/AlumnosConfig/:id"), async(req, res) =>{
 //actualizar
 router.put(("/AlumnosConfig/:id"), async(req, res) =>{
     const {id} = req.params;
-    const {nombreCompleto, correo,celular, userName, password,userStatus} = req.body;
-    await schema.updateOne({_id: id},{ $set: {nombreCompleto, correo,celular, userName, password,userStatus}})
+    const {matricula,nombreCompleto, correo,celular, userName, password,userStatus} = req.body;
+    await schema.updateOne({_id: id},{ $set: {matricula,nombreCompleto, correo,celular, userName, password,userStatus}})
     .then((data) => res.json(data))
     .catch((err) => res.json({message : err}));
 })
