@@ -5,7 +5,7 @@ const conn = {Isconnected: false}
  
 async function DBConection (){
     if (conn.Isconnected) return
-    const db = await connect("mongodb+srv://root:123@cluster0.0jvuj.mongodb.net/esi-list?retryWrites=true&w=majority");
+    const db = await connect(process.env.MONGODB_URL);
     conn.Isconnected = db.connections[0].readyState;
 }
 connection.on("connected", ()=>{console.log("mongodb is connected")});
