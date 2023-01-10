@@ -1,27 +1,27 @@
 const { Schema, model, models} = require("mongoose");
   
-const AlumnoMateria = new Schema ({
+const SchemaAlumnoMateria = new Schema ({
     idAlumno:{ 
-        type: Number,
+        type: String,
         unique: true,
         trim: true,
         maxlength: [50]
-    },idMateria :{
-        type: Number,
-        unique: true,
-        trim: true,
-        maxlength: [500]
-    },bloque :{
+    },idMateria:{
         type: String,
         unique: true,
         trim: true,
         maxlength: [500]
-    },fechaInicio :{
+    },bloque:{ 
+        type: String,
+        unique: true,
+        trim: true,
+        maxlength: [500]
+    },fechaInicio:{
         type: Date,
         unique: true,
         trim: true,
         maxlength: [500]
-    },fechaFin :{
+    },fechaFin:{
         type: Date,
         unique: true,
         trim: true,
@@ -32,4 +32,4 @@ const AlumnoMateria = new Schema ({
     versionKey: false
 })
 
-module.exports= models.AlumnoMateria || model('AlumnoMateria', AlumnoMateria)
+module.exports= models.AlumnoMateria || model('AlumnoMateria', SchemaAlumnoMateria)

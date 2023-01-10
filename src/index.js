@@ -5,7 +5,7 @@ const port = process.env.PORT || 4000
 const AlumnoRoute = require("./routes/AlumnosConfig")
 const MateriaRoute = require("./routes/MateriasConfig")
 const AsignacionRoute = require("./routes/AsignacionConfig")
-const AlumnoMateria = require("./routes/AlumnoMateria")
+const AlumnoMateria = require("./routes/AlumnoMateriaConfig")
 const cors = require("cors")
 app.use(cors())
 //middleware
